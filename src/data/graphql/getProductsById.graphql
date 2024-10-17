@@ -1,0 +1,6 @@
+query GetProductsById($id: String!) {
+  products(id: $id) {
+    title
+    description
+  }
+}

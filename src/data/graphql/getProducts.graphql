@@ -1,0 +1,17 @@
+query GetProducts($limit: Int!, $skip: Int!) {
+  productsCollection(limit: $limit, skip: $skip) {
+    items {
+      sys {
+        id
+      }
+      title
+      description
+      image {
+        url
+      }
+    }
+    total
+    skip
+    limit
+  }
+}
