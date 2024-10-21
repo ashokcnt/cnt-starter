@@ -15,9 +15,7 @@
     "build-storybook": "storybook build",
     "new:component": "yarn plop --plopfile ./.plop/plopfile.mjs",
     "dependency-graph": "npx skott --displayMode=webapp --trackThirdPartyDependencies --trackBuiltinDependencies --cwd=./src",
-    "prepare": "husky",
-    "generate": "graphql-codegen dotenv/config",
-    "generate:watch": "yarn generate -watch"
+    "prepare": "husky"
   },
   "dependencies": {
     "@graphql-codegen/typescript-react-query": "^6.1.0",
